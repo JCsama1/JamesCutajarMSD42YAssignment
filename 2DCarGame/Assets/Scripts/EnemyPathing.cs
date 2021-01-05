@@ -20,6 +20,11 @@ public class EnemyPathing : MonoBehaviour
         transform.position = waypoints[waypointIndex].transform.position;
     }
 
+    public void SetWaveConfig(WaveConfig waveConfigToSet)
+    {
+        waveConfig = waveConfigToSet;
+    }
+
     // Update is called once per frame
     void Update()
     {

@@ -18,7 +18,7 @@ public class WaveConfig : ScriptableObject
 
     [SerializeField] float enemyMoveSpeed = 7f;
 
-    public GameObject GetObject2Prefab()
+    public GameObject GetObstaclePrefab()
     {
         return obstaclePrefab;
     }
