@@ -118,6 +118,8 @@ MonoBehaviour:
   health: 1
   deathVFX: {fileID: 0}
   explosionDuration: 1
+  enemyDeathSound: {fileID: 8300000, guid: b4005a30e2bb0bf4787fe39ce1515988, type: 3}
+  enemyDeathSoundVolume: 0.25
 --- !u!70 &-5710824638157444572
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -171,3 +173,5 @@ MonoBehaviour:
   deathVFX: {fileID: 6871791473188505978, guid: f38539417a7264646958a4465af1ac79, type: 3}
   explosionDuration: 1
   damage: 50
+  enemyDeathSound: {fileID: 8300000, guid: b4005a30e2bb0bf4787fe39ce1515988, type: 3}
+  enemyDeathSoundVolume: 0.25

@@ -12,6 +12,9 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] int damage = 100;
 
+    [SerializeField] AudioClip enemyDeathSound;
+    [SerializeField] [Range(0, 1)] float enemyDeathSoundVolume = 0.75f;
+
     public int GetDamage()
     {
         return damage;
@@ -39,6 +42,9 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
 
         GameObject explosion = Instantiate(deathVFX, transform.position, Quaternion.identity);
+
+        AudioSource.PlayClipAtPoint(enemyDeathSound, Camera.main.transform.position, enemyDeathSoundVolume);
+
         Destroy(explosion, explosionDuration);
     }
 }

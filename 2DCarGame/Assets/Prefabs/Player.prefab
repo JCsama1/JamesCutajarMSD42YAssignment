@@ -115,6 +115,8 @@ MonoBehaviour:
   deathVFX: {fileID: 6871791473188505978, guid: f38539417a7264646958a4465af1ac79, type: 3}
   explosionDuration: 1
   damage: 100
+  enemyDeathSound: {fileID: 0}
+  enemyDeathSoundVolume: 0.5
 --- !u!60 &7284801789831342832
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -180,3 +182,5 @@ MonoBehaviour:
   health: 500
   deathVFX: {fileID: 0}
   explosionDuration: 1
+  enemyDeathSound: {fileID: 0}
+  enemyDeathSoundVolume: 0.75

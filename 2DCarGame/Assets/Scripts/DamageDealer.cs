@@ -11,6 +11,9 @@ public class DamageDealer : MonoBehaviour
     [SerializeField] GameObject deathVFX;
     [SerializeField] float explosionDuration = 1f;
 
+    [SerializeField] AudioClip enemyDeathSound;
+    [SerializeField] [Range(0, 1)] float enemyDeathSoundVolume = 0.75f;
+
     public int GetDamage()
     {
         return damage;
@@ -38,6 +41,9 @@ public class DamageDealer : MonoBehaviour
         Destroy(gameObject);
 
         GameObject explosion = Instantiate(deathVFX, transform.position, Quaternion.identity);
+
+        AudioSource.PlayClipAtPoint(enemyDeathSound, Camera.main.transform.position, enemyDeathSoundVolume);
+
         Destroy(explosion, explosionDuration);
     }
 }
