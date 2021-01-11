@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -6880668338834052676}
   - component: {fileID: -6550144343062055095}
   - component: {fileID: -4854744955468449683}
+  - component: {fileID: -5514727656909983449}
   m_Layer: 0
   m_Name: Obstacle4
   m_TagString: Untagged
@@ -114,6 +115,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
+  health: 1
+  deathVFX: {fileID: 0}
+  explosionDuration: 1
 --- !u!70 &-6550144343062055095
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -151,3 +155,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-5514727656909983449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532409522217827092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffdad3b292c08cf469b68eb7b6f8a5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  deathVFX: {fileID: 6871791473188505978, guid: f38539417a7264646958a4465af1ac79, type: 3}
+  explosionDuration: 1
+  damage: 50

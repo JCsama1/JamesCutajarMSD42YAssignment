@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3076415706086646441}
   - component: {fileID: -5513761122472731002}
   - component: {fileID: 7284801789831342832}
+  - component: {fileID: 5736288653947103619}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -111,6 +112,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 500
+  deathVFX: {fileID: 6871791473188505978, guid: f38539417a7264646958a4465af1ac79, type: 3}
+  explosionDuration: 1
+  damage: 100
 --- !u!60 &7284801789831342832
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -160,3 +164,19 @@ PolygonCollider2D:
       - {x: 0.285, y: -0.73499995}
       - {x: 0.36499998, y: -0.635}
       - {x: 0.39499998, y: -0.565}
+--- !u!114 &5736288653947103619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3076415706086646440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27f1d42da3ec0bc4096c4c72a42240d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
+  health: 500
+  deathVFX: {fileID: 0}
+  explosionDuration: 1
