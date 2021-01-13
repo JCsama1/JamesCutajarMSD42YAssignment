@@ -167,7 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   health: 500
-  deathVFX: {fileID: 0}
+  deathVFX: {fileID: 6871791473188505978, guid: f38539417a7264646958a4465af1ac79, type: 3}
   explosionDuration: 1
   enemyDeathSound: {fileID: 0}
   enemyDeathSoundVolume: 0.75
