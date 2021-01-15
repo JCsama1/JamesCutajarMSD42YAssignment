@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] float moveSpeed = 7f;
 
-    [SerializeField] float health = 500f;
+    [SerializeField] int health = 500;
 
     [SerializeField] GameObject deathVFX;
     [SerializeField] float explosionDuration = 1f;
@@ -62,6 +62,11 @@ public class Player : MonoBehaviour
     public void Hit()
     {
         Destroy(gameObject);
+    }
+
+    public int GetHealth()
+    {
+        return health;
     }
 
     private void OnTriggerEnter2D(Collider2D otherObject)
