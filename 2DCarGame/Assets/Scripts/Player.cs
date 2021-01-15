@@ -78,15 +78,12 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        print("Hello");
         Destroy(gameObject);
-        print("Hello");
 
         GameObject explosion = Instantiate(deathVFX, transform.position, Quaternion.identity);
 
         Destroy(explosion, explosionDuration);
 
-        print("Hello");
         FindObjectOfType<Level>().LoadGameOver();
     }
 }

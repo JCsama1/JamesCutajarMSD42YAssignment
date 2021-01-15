@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] AudioClip enemyDeathSound;
     [SerializeField] [Range(0, 1)] float enemyDeathSoundVolume = 0.75f;
 
+
     public int GetDamage()
     {
         return damage;
