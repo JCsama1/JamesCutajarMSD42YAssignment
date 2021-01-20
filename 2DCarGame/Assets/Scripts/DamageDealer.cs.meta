@@ -3,7 +3,9 @@ guid: 27f1d42da3ec0bc4096c4c72a42240d7
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - deathVFX: {instanceID: 0}
+  - enemyDeathSound: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
